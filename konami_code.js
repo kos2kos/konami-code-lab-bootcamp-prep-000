@@ -22,7 +22,7 @@ function init() {
   if (key === code[index]) {
     index++;
     if (index === code.length) {
-      alert("YOOOOOOKOOOONAMI")
+      alert("YOOOOOOKOOOONAMI");
       konamiCodePosition = 0;
     }
   } else {
