@@ -17,7 +17,7 @@ function onKeyDownHandler(e){
 function init() {
   // Write your JavaScript code inside the init() function
   document.addEventListener('keydown', function(e) {
-  var key = allowedKeys[e.keyCode];
+  var key = code[e.keyCode];
   // get the value of the required key from the konami code
   var requiredKey = konamiCode[konamiCodePosition];
 
