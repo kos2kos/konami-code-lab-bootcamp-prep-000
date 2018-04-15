@@ -24,6 +24,7 @@ function init() {
     if (index == code.length) {
       activateCheats();
       konamiCodePosition = 0;
+      alert("YOOOOOOKOOOONAMI")
     }
   } else {
     index = 0;
