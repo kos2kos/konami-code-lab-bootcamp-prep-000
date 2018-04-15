@@ -16,8 +16,27 @@ function onKeyDownHandler(e){
 }
 function init() {
   // Write your JavaScript code inside the init() function
-  document.querySelector('keydown', function(e){
-    
+  document.addEventListener('keydown', function(e) {
+  var key = allowedKeys[e.keyCode];
+  // get the value of the required key from the konami code
+  var requiredKey = konamiCode[konamiCodePosition];
+
+  // compare the key with the required key
+  if (key == requiredKey) {
+
+    // move to the next key in the konami code sequence
+    konamiCodePosition++;
+
+    // if the last key is reached, activate cheats
+    if (konamiCodePosition == konamiCode.length) {
+      activateCheats();
+      konamiCodePosition = 0;
+    }
+  } else {
+    konamiCodePosition = 0;
+  }
+});
+
   }
 
 }
