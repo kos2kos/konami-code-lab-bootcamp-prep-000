@@ -19,9 +19,9 @@ function init() {
   document.addEventListener('keydown', function(e) {
   var key = code[e.keyCode];
 
-  if (key == code[index]) {
+  if (key === code[index]) {
     index++;
-    if (index == code.length) {
+    if (index === code.length) {
       alert("YOOOOOOKOOOONAMI")
       konamiCodePosition = 0;
     }
