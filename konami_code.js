@@ -17,7 +17,7 @@ function onKeyDownHandler(e){
 function init() {
   // Write your JavaScript code inside the init() function
   document.addEventListener('keydown', function(e) {
-  var key = code[e.keyCode];
+  var key = parseInt(e.detail || e.which);
 
   if (key === code[index]) {
     index++;
