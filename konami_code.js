@@ -22,8 +22,8 @@ function init() {
   if (key == code[index]) {
     index++;
     if (index == code.length) {
-      konamiCodePosition = 0;
       alert("YOOOOOOKOOOONAMI")
+      konamiCodePosition = 0;
     }
   } else {
     index = 0;
